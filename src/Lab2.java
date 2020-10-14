@@ -9,7 +9,9 @@ public class Lab2 {
 	double width;
 	double perimeter;
 	double area;
+	String continueChecking = "";
 
+	do {
 	System.out.println("Please enter the length of the classrom.");
 	length = scnr.nextDouble();
 	System.out.println("Please enter the width of the classroom.");
@@ -39,5 +41,12 @@ public class Lab2 {
 	} else {
 		System.out.println("Entry invalid. Try again.");
 	}
+	
+	System.out.println("Would you like to measure another room?");
+	System.out.println("Please enter 'yes' or 'no'");
+	continueChecking = scnr.next();
+	} while (continueChecking.equals("yes"));
+	
+	
 }
 }
